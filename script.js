@@ -13,6 +13,9 @@ function calculate() {
     display.value = "Error!";
   }
 }
+function deleteLastSign() {
+  display.value = display.value.slice(0, -1);
+}
 
 document.addEventListener("keyup", (e) => {
   //RegExp
@@ -21,7 +24,9 @@ document.addEventListener("keyup", (e) => {
     addToDisplay(key);
   } else if (key === "Enter") {
     calculate();
-  } else if (key === "Backspace" || key === "Backspace" || key === "Delete") {
+  } else if (key === "Delete") {
     clearDisplay();
+  } else if (key === "Backspace") {
+    deleteLastSign();
   }
 });
