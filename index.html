@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <input id="display" readonly />
+      <div id="buttons">
+        <button class="function" id="add" onclick="addToDisplay('+')">+</button>
+        <button class="number" id="7" onclick="addToDisplay('7')">7</button>
+        <button class="number" id="8" onclick="addToDisplay('8')">8</button>
+        <button class="number" id="9" onclick="addToDisplay('9')">9</button>
+        <button class="function" id="subtract" onclick="addToDisplay('-')">
+          -
+        </button>
+        <button class="number" id="4" onclick="addToDisplay('4')">4</button>
+        <button class="number" id="5" onclick="addToDisplay('5')">5</button>
+        <button class="number" id="6" onclick="addToDisplay('6')">6</button>
+        <button class="function" id="multiply" onclick="addToDisplay('*')">
+          *
+        </button>
+        <button class="number" id="1" onclick="addToDisplay('1')">1</button>
+        <button class="number" id="2" onclick="addToDisplay('2')">2</button>
+        <button class="number" id="3" onclick="addToDisplay('3')">3</button>
+        <button class="function" id="divide" onclick="addToDisplay('/')">
+          /
+        </button>
+        <button class="number" id="0" onclick="addToDisplay('0')">0</button>
+        <button class="number" id="dot" onclick="addToDisplay('.')">.</button>
+        <button class="function" id="calculate" onclick="calculate()">=</button>
+        <button class="function" id="clear" onclick="clearDisplay()">C</button>
+      </div>
+      <footer>Copyrigt, Max Nikolajev</footer>
+    </div>
+  </body>
+</html>
